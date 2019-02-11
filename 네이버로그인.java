@@ -7,8 +7,8 @@
 	{
 		String STATE = UUID.randomUUID().toString(); //Unique 랜덤 토큰을 생성한다.
 		
-		String CLIENT_ID = "netQK7LPG3xotV1ZObkd"; // 네이버 로그인 클라이언트 ID를 지정한다.
-		String CLIENT_SECRET = "sahZPh_P3m"; // 네이버 로그인 시크릿 코드를 지정한다.
+		String CLIENT_ID = ""; // 네이버 로그인 클라이언트 ID를 지정한다.
+		String CLIENT_SECRET = ""; // 네이버 로그인 시크릿 코드를 지정한다.
 		String REDIRECT_URL = "http://localhost:8080/login/users/returnVars";
 		
 		String NAVER_OAUTH_TOKEN_URL = "https://nid.naver.com/oauth2.0/authorize?response_type=code"; // oAuth 토큰 주소
@@ -28,8 +28,8 @@
 	{
 		String RECEIVED_TOKEN = request.getParameter("state");
 		String RECEIVED_CODE = request.getParameter("code");
-		String CLIENT_ID = "netQK7LPG3xotV1ZObkd"; // 네이버 로그인 클라이언트 ID를 지정한다.
-		String CLIENT_SECRET = "sahZPh_P3m"; // 네이버 로그인 시크릿 코드를 지정한다.
+		String CLIENT_ID = ""; // 네이버 로그인 클라이언트 ID를 지정한다.
+		String CLIENT_SECRET = ""; // 네이버 로그인 시크릿 코드를 지정한다.
 		String REDIRECT_URL = "http://localhost:8080/login/users/returnVars";
 		
 		String OAUTH_TOKEN = (String)session.getAttribute("OAUTH_NAVER_TOKEN");
